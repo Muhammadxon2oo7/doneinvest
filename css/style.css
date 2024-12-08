@@ -246,6 +246,19 @@ h1, h2, h3, h4, h5, h6, figure {
     height: 600px;
   }
 }
+@media screen and (max-width:1150px){
+  .container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .navbar-collapse{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  li{
+    font-size: 12px;
+  }
+}
 .gtco-cover .display-t,
 .gtco-cover .display-tc {
   height: 900px;
@@ -462,9 +475,89 @@ h1, h2, h3, h4, h5, h6, figure {
 .heading h1 {
   margin-bottom: 10px;
 }
+.social{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  align-items: center;
+  height: 100%;
+}
+#navbar4{
+  display: flex;
+  align-items: center;
+}
+#navbar5{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+#navbar5 li{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+#navbar5 a{
+  margin: 0;
+  padding: 0;
+}
+.hiddenmenyu{
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+.social{
+  height: 100%;
+}
+
 @media screen and (max-width: 768px) {
   .heading h1 {
     font-size: 26px;
+  }
+}
+@media only screen and (max-width:992px){
+  .changedmen{
+    display: flex;
+    justify-content: center;
+  }
+  .hiddenmenyu{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+  .logohamwrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+  }
+}
+@media only screen and (max-width:992px){
+  .ull{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .social{
+    all: unset;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .social_wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width:768px){
+  .navsocial{
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
 .heading .sub {
@@ -1085,3 +1178,4 @@ form label {
   font-size: 90%;
   color: #444;
 }
+
