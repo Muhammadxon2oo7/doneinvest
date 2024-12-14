@@ -101,14 +101,21 @@
 				<div class="collapse main-nav navsocial hiddenmenyu" style="display: flex;flex-wrap: wrap; justify-content: space-between; align-items: center;" id="navbar4">
 				<ul class="navbar-nav mr-auto pl-lg-4 social_wrapper"  id="navbar5">
 	
-				<li class="nav-item px-lg-2 active"> <a class="nav-link active" href="#" data-nav-section="home"> <span class="d-inline-block d-lg-none icon-width"><i class="fas fa-home"></i></span>Asosiy sahifa</a> </li>
+				<li class="nav-item px-lg-2 "> <a class="nav-link " href="#" data-nav-section="home"> <span class="d-inline-block d-lg-none icon-width"><i class="fas fa-home"></i></span>Asosiy sahifa</a> </li>
 				<li class="nav-item px-lg-2"> <a class="nav-link" href="#" data-nav-section="about"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-spa"></i></span>Biz haqimizda</a> </li>
 				<li class="nav-item px-lg-2"> <a class="nav-link" href="#" data-nav-section="practice-areas"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-user"></i></i></span>Obyektlar</a> </li>
-				<li class="nav-item px-lg-2"> <a class="nav-link" href="#" data-nav-section="our-team"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-user"></i></i></span>biznes kalkulyator
+				<li class="nav-item px-lg-2"> <a class="nav-link" href="#" data-nav-section="our-team"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-user"></i></i></span>Biznes kalkulyator
 				</a> </li>
 				<li class="nav-item px-lg-2"> <a class="nav-link" href="#" data-nav-section="contact"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-user"></i></i></span>Biz bilan bog'laning
 				</a> </li>
+				
 
+				<li class="nav-item px-lg-2">
+					<a class="nav-link" href="#" id="email-link">
+						<span class="d-inline-block d-lg-none icon-width"><i class="fas fa-envelope"></i></span>E-mail
+					</a>
+				</li>
+				
 				</ul>
 
 			<div class="btn-group social " style="height: 100%; z-index: 100;">
@@ -134,7 +141,7 @@
 			</div>
 		</nav>
 		
-	<section id="gtco-hero" class="gtco-cover" style="background-image: url(./images/magnificent-presentation-of-investment-9b9krffysijiiz8w\ \(1\).jpg);"  data-section="home"  data-stellar-background-ratio="0.5">
+	<section id="gtco-hero" class="gtco-cover" style="background-image: url('./images/banner.jpg');"  data-section="home"  data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -390,8 +397,8 @@
 							<li class="phone"><a href="tel://+998971971283
 								">+998 97 197 1283
 							</a></li>
-							<li class="email"><a href="mailto:uze.investment@gmail.com
-								">uze.investment@gmail.com
+							<li class="email"><a href="mailto:info@e-investment.uz
+								">info@e-investment.uz
 							</a></li>
 							<li class="url"><a href="
 								https://e-investment.uz" target="_blank">
@@ -496,6 +503,11 @@ document.querySelector('#webdowload').addEventListener('click', function(event) 
     event.preventDefault();  
     window.open(this.href, '_blank');  
 });
+ // "E-mail" havolasi bosilganda yo'naltirish
+ document.getElementById('email-link').addEventListener('click', function (event) {
+            event.preventDefault(); // Havolaning standart harakatini bloklash
+            window.location.href = '/webmail/'; // Yo'naltirish
+        });
 </script>
 	</body>
 </html>
